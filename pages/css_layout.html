@@ -2,16 +2,16 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Табличная верстка</title>
+    <title>О CSS верстке</title>
     <link rel="stylesheet" href="/styles/css_layout.css">
 </head>
 <body>
     <table border="1" width="100%">
         <tr>
             <td rowspan="2">
-                <img src="/imeges/html.png"
+                <img src="/imeges/html.png">
             </td>
-            <td rowspan="2" width="80%">Название</td>
+            <td rowspan="2" width="80%">Мой сайт - мой дизайн</td>
             <td width="15%">Логин</td>
         </tr>
 
@@ -19,27 +19,62 @@
             <td width="15%">Пароль</td>
         </tr>
         <tr>
-            <td colspan="3">Навигация</td>
+            <td colspan="3">
+                <ul class="nav">
+                    <li>
+                        <a href="../index.html">Главная страница </a>
+                    </li>
+                    <li>
+                        <a href="/pages/html_layout.html">Верстка</a>
+                    </li>
+                    <li>
+                        <a href="/pages/JS_layout.html">JS программирование</a>
+                    </li>
+                </ul>
+            </td>
         </tr>
     </table>
     <table border="1" width="100%">
         <tr>  
             <td rowspan="2" width="15%">
                 <ul>
-                    <li>
-                        <a href="/index.html">Главная страница</a>
-                    </li>
-                    <li>
-                        <a href="css_layout.html">CSS оформление</a>
-                    </li>
-                    <li>
-                        <a href="JS_layout.html">JS программирование</a>
-                    </li>
+
                 </ul>
             </td>
             <td>
-                
-
+                <p>
+                    CSS - это язык оформления HTML-документов. 
+                    За более подробной информацией <a href="https://ru.wikipedia.org/wiki/CSS">сюда.</a> 
+                    Так как он является вспомогательным языком, то существует несколько основных способов его добавления на web-страницу:
+                </p>
+                <ul>
+                    <li>
+                        Внешний &lt;link rel="stylesheet" href="style.css">
+                    </li>
+                    <li>
+                        Внутренний глобальный &lt;style>&lt;/style>
+                    </li>
+                    <li>
+                        Внутренний локальный &lt;span style="color: red">&lt;/span>
+                    </li>
+                </ul>
+                <p>
+                    Синтаксис языка выглядит следующим образом: сначала указывается изменяемый элемент с помощью селектора, 
+                    после этого в фигурных скобках перечисляются через точку с запятой изменяемые свойства элемента 
+                    (цвет, размер, расположение и т.д.), затем напротив каждого свойства указывается значение (red, left, 1px и т.д.). 
+                    Например:
+                </p>
+                                        table  {
+                                            width: 80%;
+                                            border-color: white;
+                                            border-style: groove;
+                                            border-width: 5px;
+                                        }
+                                    
+                В ситуации когда изменить необходимо только некоторые элементы, 
+                следует пользоваться указателями класса: когда одни и теже теги принадлежат разным классам и оформляются по разному.
+                &lt;table class="header">&lt;/table>
+                &lt;table class="main">&lt;/table>
             </td>
           
         </tr>

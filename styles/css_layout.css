@@ -1,10 +1,14 @@
 body {
     color:#0d0e52;
-    background-color: rgb(175, 197, 197);
+    background-color: rgb(196, 134, 204);
 }
 table {
     border-color: rgb(53, 86, 148);
 }
 td {
-    background-color: rgb(189, 189, 212);
+    background-color: rgba(189, 189, 212, 0.685);
+}
+.nav li {
+    list-style: none;
+    display: inline;
 }
