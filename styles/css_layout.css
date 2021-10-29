@@ -1,14 +1,22 @@
 body {
     color:#0d0e52;
+<<<<<<< HEAD
     background-color: rgb(196, 134, 204);
+=======
+    background-color: rgb(146, 147, 189);
+>>>>>>> 7efb003a898b5b19e4a2b31613cc4fb3c035be53
 }
 table {
     border-color: rgb(53, 86, 148);
 }
 td {
+<<<<<<< HEAD
     background-color: rgba(189, 189, 212, 0.685);
 }
 .nav li {
     list-style: none;
     display: inline;
+=======
+    background-color: rgb(194, 207, 235);
+>>>>>>> 7efb003a898b5b19e4a2b31613cc4fb3c035be53
 }
